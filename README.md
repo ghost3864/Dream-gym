@@ -23,7 +23,7 @@ HTML, CSS, JavaScript e Supabase (Auth e base de dados).
 ## Executar localmente
 
 1. Crie um projeto Supabase e configure a tabela `public.profiles` com uma coluna `id` compatível com o ID do utilizador autenticado e os campos de perfil usados pelo formulário: `nome`, `idade`, `sexo`, `peso`, `altura`, `biotipo` e `status_treino`.
-2. Configure o URL do projeto e a chave publicável no ficheiro `supabase-config.js`.
+2. Copie `supabase-config.example.js` para `supabase-config.js` e preencha o URL do projeto e a chave publicável.
 3. Execute o script `supabase-rls.sql` no SQL Editor do Supabase para aplicar as políticas de acesso aos perfis.
 4. Abra `index.html` através de um servidor web local.
 
