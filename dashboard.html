@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu treino | Dream Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="journey-page" data-auth-required data-profile-required>
+    <header class="header">
+        <a href="index.html" class="logo">DREAM GYM</a>
+        <div class="header-actions">
+            <a href="perfil.html" class="back-link">PERFIL</a>
+            <button type="button" class="sign-out-button" data-sign-out>SAIR</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="dashboard-welcome">
+            <p class="eyebrow">SEU ESPAÇO</p>
+            <h1>Olá, <span data-user-name>atleta</span>.</h1>
+            <p>Seu treino está pronto para acompanhar o seu ritmo.</p>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="dashboard-card featured-card">
+                <p class="card-label">TREINO DE HOJE</p>
+                <h2 id="today-workout-title">Parte superior</h2>
+                <p id="today-workout-description">Peito, costas, ombros e braços.</p>
+                <a href="#" class="card-action">COMEÇAR TREINO →</a>
+            </article>
+
+            <article class="dashboard-card">
+                <p class="card-label">PRÓXIMO TREINO</p>
+                <h2 id="next-workout-title">Parte inferior</h2>
+                <p id="next-workout-description">Pernas, glúteos e core.</p>
+                <span class="card-muted">Amanhã</span>
+            </article>
+
+            <article class="dashboard-card progress-card">
+                <p class="card-label">SEU PROGRESSO</p>
+                <h2 id="plan-title">0 treinos</h2>
+                <p id="plan-description">Registre seu primeiro treino para iniciar o seu histórico.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer"><p>TREINE • REGISTRE • EVOLUA</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
